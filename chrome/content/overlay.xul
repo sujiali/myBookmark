@@ -6,7 +6,7 @@
 	<menubar id="main-menubar">
 		<menu id="bookmarksMenu">
 			<menupopup id="bookmarksMenuPopup">
-				<menuitem id="myExportBookmarkToJson" insertafter="bookmarksShowAll" label="&myExportBookmarkToJson.label;" oncommand="myConvertBKToJson()"></menuitem>
+				<menuitem id="myExportBookmarkToJson" insertafter="bookmarksShowAll" label="&myExportBookmarkToJson.label;" oncommand="myBookmark.cvBookmarkToJson()"></menuitem>
 			</menupopup>
 		</menu>
 	</menubar>

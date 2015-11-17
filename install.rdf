@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+	<Description about="urn:mozilla:install-manifest">
+		<em:id>myBookmark@uande.com</em:id>
+		<em:name>myBookmark</em:name>
+		<em:version>12.1</em:version>
+		<em:description>A extension optimize the bookmark function.      
+1. replace the original bookmarks menu on toolbar with unsorted bookmark menu sorted by date added.
+2. export bookmarks to json data (unfinished)</em:description>
+		<em:creator>SU Jiali</em:creator>
+		<!-- Firefox -->
+		<em:targetApplication>
+			<Description>
+				<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+				<em:minVersion>10.0</em:minVersion>
+				<em:maxVersion>45.0</em:maxVersion>
+			</Description>
+		</em:targetApplication>
+	</Description>
+</RDF>

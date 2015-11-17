@@ -1,0 +1,30 @@
+﻿<?xml version="1.0"?>
+<!--File Name: overlay.xul-->
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<?xml-stylesheet href="chrome://myBookmarkApp/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://myBookmarkApp/locale/overlay.dtd">
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<menubar id="main-menubar">
+		<menu id="bookmarksMenu">
+			<menupopup id="bookmarksMenuPopup">
+				<menuitem id="myExportBookmarkToJson" insertafter="bookmarksShowAll" label="&myExportBookmarkToJson.label;" oncommand="myConvertBKToJson()"></menuitem>
+				<menuitem id="myex" label="xxxxx"></menuitem>
+			</menupopup>
+		</menu>
+	</menubar>
+	<popupset>
+		<menupopup id="myBookmarkContextmenu">
+			<menuitem label="&myBookmarkContextmenu.edit;" oncommand="myEditProperties()"/>
+			<menuitem label="&myBookmarkContextmenu.delete;" oncommand="myRemoveBookmark()"/>
+		</menupopup>
+	</popupset>
+	<toolbar id="nav-bar">
+		<hbox id="nav-bar-customization-target">
+		    <toolbarbutton id="bookmarks-menu-button-2" class="toolbarbutton-1 chromeclass-toolbar-additional" persist="class" removable="true" type="menu-button" label="Unsorted Bookmarks" tooltip="dynamic-shortcut-tooltip" anchor="dropmarker" cui-areatype="toolbar">
+		        <menupopup id="myTempContextmenu" class="cui-widget-panel cui-widget-panelview cui-widget-panelWithFooter PanelUI-subView" flip="both" side="top" position="bottomcenter topright" style="pointer-events: none;">
+		        </menupopup>
+		    </toolbarbutton>
+		</hbox>
+	</toolbar>
+	<script type="application/x-javascript" src="ccb.js"/>
+</overlay>

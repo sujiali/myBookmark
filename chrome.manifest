@@ -1,0 +1,6 @@
+content	myBookmark			chrome/content/
+skin	myBookmark	classic chrome/skin/
+locale	myBookmark	en-US	chrome/locale/en-US/
+locale	myBookmark	zh-CN	chrome/locale/zh-CN/
+# Firefox - Main window
+overlay	chrome://browser/content/browser.xul	chrome://myBookmark/content/overlay.xul

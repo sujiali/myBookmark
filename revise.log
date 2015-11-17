@@ -1,0 +1,51 @@
+﻿version 12.1
+1. 改变生成菜单的方法
+2. 添加show all bookmarks菜单
+
+version 12.0.0
+1. 对象化
+2. 全局变量减少
+
+version 11.0.0
+
+1. 与unsorted bookmarks完全整合。
+
+version 10.0.0
+
+1. 新功能，与unsorted bookmarks互动。
+
+version 6.2.0
+
+1. 删除保存文件时的try catch结构以避免提示"Permission to save file was denied"。
+
+version 6.1.0
+
+1. 修改PlacesUIUtils.showItemProperties成PlacesUIUtils.showBookmarkDialog
+
+version 6.0.0
+
+1. 修改适配Firefox 25.0.1
+
+version 5.0.0
+
+1. 国际化
+2. 将菜单项从JS内部生成改为JS调用xml引用；
+
+version 4.0.0
+
+1. 将ExportBookmarktoJson从myTemp中分离，整合到bookmarksMenu菜单中；
+2. 继续整合代码；
+
+version 3.0.0
+
+1. 整理代码；
+2. 改变扩展名称为myBookmarkApp；
+
+version 2.0.0
+
+1. 精简 getAllBookmarks(aFolder) 函数的for循环个数。以前是先分离文件夹和书签，再分别循环进行后期处理，共需要3个for循环；
+现在是在第一个for循环时不仅仅分离文件夹和书签，而且同时做好后期处理，分别放入两个数组里，然后通过数据合并函数concat进行数组合并，共需要1个for循环；
+
+version 1.0.0
+
+1. 使用json数据形式保存书签文件；

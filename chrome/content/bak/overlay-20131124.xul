@@ -1,0 +1,28 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://myBookmarkApp/locale/myBookmark.dtd">
+<overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<menubar id="main-menubar">
+		<menu id="myTemp"  insertafter="bookmarksMenu" label="Temp">
+			<menupopup id="myTempContextmenu" ignorekeys="true" onpopupshowing="return myTempOnpop(event)">
+			</menupopup>
+		</menu>
+		<menu id="bookmarksMenu">
+			<menupopup id="bookmarksMenuPopup">
+				<menuitem id="myExportBookmarkToJson" insertafter="bookmarksShowAll" label="&myExportBookmarkToJson.label;" oncommand="myConvertBKToJson()"></menuitem>
+			</menupopup>
+		</menu>
+	</menubar>
+	
+	<popupset>
+		<menupopup id="myBookmarkContextmenu">
+			<menuitem label="&myBookmarkContextmenu.edit;" oncommand="myEditProperties()"/>
+			<menuitem label="&myBookmarkContextmenu.delete;" oncommand="myRemoveBookmark()"/>
+		</menupopup>
+		<menupopup>
+			<menuitem id="myAddBookmark" label="&myAddBookmark.label;" oncommand="myAddBookmarkToTemp()"/>
+		</menupopup>
+	</popupset>
+	
+	<script type="application/x-javascript" src="myBookmark.js"/>
+</overlay>

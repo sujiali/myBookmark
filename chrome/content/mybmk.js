@@ -39,6 +39,7 @@ var myBookmark = {
 		showallmenu.setAttribute('command', 'Browser:ShowAllBookmarks');
 		showallmenu.setAttribute('key', 'manBookmarkKb');
 		bmp.appendChild(showallmenu);
+		// hello here is new
 	},
 
 	// 获取所有书签
